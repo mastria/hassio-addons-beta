@@ -22,16 +22,19 @@ RUN apk add --no-cache \
     php82-xmlwriter \
     php82-simplexml \
     php82-dom \
-    php82-tokenizer \
     php82-pecl-redis \
     php82-pcntl \
-    php82-posix
-
+    php82-posix \
+    php82-session
 
 RUN mkdir -p /home/app
 COPY ./ /home/app
 WORKDIR /home/app
+
+RUN php -m
+
 RUN composer install --no-interaction --no-dev
+
 RUN chmod a+x run.sh
 
 CMD [ "/home/app/run.sh" ]
