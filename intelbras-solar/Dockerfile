@@ -47,6 +47,14 @@ ARG BUILD_REF
 ARG BUILD_REPOSITORY
 ARG BUILD_VERSION
 
+# Print build arguments
+RUN echo "Build Date: $BUILD_DATE" \
+    && echo "Build Description: $BUILD_DESCRIPTION" \
+    && echo "Build Name: $BUILD_NAME" \
+    && echo "Build Ref: $BUILD_REF" \
+    && echo "Build Repository: $BUILD_REPOSITORY" \
+    && echo "Build Version: $BUILD_VERSION"
+
 # Labels
 LABEL \
     io.hass.name="${BUILD_NAME}" \
