@@ -1,7 +1,7 @@
 ## v1.1.3
 
 - Update Add-on Base Images to 17.0.1
-- Timezone fix
+- Timezone update
 - PHP version fix
 
 ## v1.1.2

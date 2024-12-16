@@ -4,5 +4,10 @@ build_from:
   armhf: ghcr.io/hassio-addons/base/armhf:17.0.1
   armv7: ghcr.io/hassio-addons/base/armv7:17.0.1
   i386: ghcr.io/hassio-addons/base/i386:17.0.1
+labels:
+  org.opencontainers.image.title: "Intelbras Solar"
+  org.opencontainers.image.description: "Integração com o painel da Intelbras Solar."
+  org.opencontainers.image.source: "https://github.com/mastria/hassio-addons/tree/main/intelbras-solar"
+  org.opencontainers.image.licenses: "MIT"
 codenotary:
   signer: codenotary@frenck.dev
