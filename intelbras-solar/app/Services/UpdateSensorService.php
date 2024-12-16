@@ -46,8 +46,8 @@ class UpdateSensorService
                 'icon' => 'mdi:solar-power-variant-outline',
                 'device_class' => 'energy',
                 'state_class' => 'total_increasing',
-                'unique_id' => 'sensor.intelbras_' . $estacao['sn'],
             ],
+            'unique_id' => 'intelbras_' . $estacao['sn'],
         ];
 
         $estacao['status'] = $this->status($estacao['status']);
