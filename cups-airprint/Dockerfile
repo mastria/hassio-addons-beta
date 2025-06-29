@@ -10,7 +10,7 @@ ARG BUILD_REPOSITORY
 LABEL \
     io.hass.version="${BUILD_VERSION}" \
     io.hass.name="CUPS Print Server" \
-    io.hass.description="Addon de servidor de impressão CUPS com AirPrint" \
+    io.hass.description="A CUPS print server with working AirPrint" \
     io.hass.arch="amd64|aarch64" \
     io.hass.type="addon" \
     org.opencontainers.image.title="CUPS Print Server" \
