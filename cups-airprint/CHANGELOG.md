@@ -1,4 +1,4 @@
-## v1.5
+## v1.0.0
 
-- Update Debian Base to 7.6.2
-- Add HP drivers (printer-driver-hpcups)
+- Debian Base 18.0.0
+- HP drivers (printer-driver-hpcups)
